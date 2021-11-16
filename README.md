@@ -14,3 +14,18 @@ After Anchor and Solana are installed in the system (so you have in PATH the sol
 2. Run `npm install` in the root folder to install the dependencies
 3. Run `anchor test` to build the Solana program and all the IDL/extra typescript. After the build is completed Anchor will launch a `solana-test-validator` 
 (you need to not have the local validator running!). After the compilation automatically the system will run the tests in `tests/`.
+
+The most important files are:
+1. `programs/taskmint/src/lib.rs` that containis the Solana program
+2. `tests/taskmint.js` that contains the testcode with the client-side part of the task
+
+Anchor is very very powerfull but it's not well documented as library, so almost all the information needed to implement the task were recovered from reading the code and using examples. Here the documentation I've used to understand better the library and Solana:
+- https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291 Base Anchor example
+- https://hackmd.io/@ironaddicteddog/anchor_example_escrow Escrow Anchor example
+- https://github.com/ironaddicteddog/anchor-escrow/blob/master/programs/escrow/src/lib.rs Src for Escrow Anchor
+- https://github.com/ironaddicteddog/anchor-escrow/blob/master/tests/escrow.ts Test (client) for Escrow Anchor
+- https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/#processor-part-3-pdas-part-3 Classic Solana Escrow
+- https://docs.rs/anchor-lang/0.18.2/anchor_lang/index.html Rust doc for Anchor Solana-side
+- https://project-serum.github.io/anchor/ts/index.html TS/JS doc for Anchor client-side
+- https://docs.rs/anchor-spl/0.18.2/anchor_spl/ SPL Token classes for Anchor Solana-side
+I have omitted obvious documentation like the official ones from Solana and SPLToken.
