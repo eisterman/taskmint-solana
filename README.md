@@ -16,8 +16,8 @@ After Anchor and Solana are installed in the system (so you have in PATH the sol
 (you need to not have the local validator running!). After the compilation automatically the system will run the tests in `tests/`.
 
 The most important files are:
-1. `programs/taskmint/src/lib.rs` that containis the Solana program
-2. `tests/taskmint.js` that contains the testcode with the client-side part of the task
+1. [`programs/taskmint/src/lib.rs`](programs/taskmint/src/lib.rs) containis the Solana program
+2. [`tests/taskmint.js`](tests/taskmint.js) that contains the testcode with the client-side part of the task
 
 Anchor is very very powerfull but it's not well documented as library, so almost all the information needed to implement the task were recovered from reading the code and using examples. Here the documentation I've used to understand better the library and Solana:
 - https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291 Base Anchor example
