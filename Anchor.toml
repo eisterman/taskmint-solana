@@ -1,0 +1,12 @@
+[programs.localnet]
+taskmint = "ZJaaqFTUwVYj6Yit6yhpKbtNZXAvgdZMPuL6Lgf9PNF"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "localnet"
+wallet = "/home/fpasqua/solana/devnet_keypair.json"
+
+[scripts]
+test = "mocha -t 1000000 tests/"
