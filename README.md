@@ -28,4 +28,5 @@ Anchor is very very powerfull but it's not well documented as library, so almost
 - https://docs.rs/anchor-lang/0.18.2/anchor_lang/index.html Rust doc for Anchor Solana-side
 - https://project-serum.github.io/anchor/ts/index.html TS/JS doc for Anchor client-side
 - https://docs.rs/anchor-spl/0.18.2/anchor_spl/ SPL Token classes for Anchor Solana-side
+
 I have omitted obvious documentation like the official ones from Solana and SPLToken.
